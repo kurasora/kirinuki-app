@@ -6,18 +6,30 @@
 <title>kirinuki</title>
 <style>
 body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.7;color:#222;background:#fff}
-h1{font-size:1.6em}a{color:#0b57d0}
+h1{font-size:1.6em}h2{font-size:1.15em;margin-top:1.6em}a{color:#0b57d0}
+.yt{display:inline-block;border:1px solid #ddd;border-radius:8px;padding:6px 12px;background:#fafafa}
+nav a{margin-right:16px}
 </style>
 </head>
 <body>
+<nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
 <h1>kirinuki</h1>
-<p>kirinuki is a personal tool used by the owner of the YouTube channel
+<p class="yt">This app uses <strong>YouTube API Services</strong>.</p>
+<p>kirinuki is a personal, non-commercial tool used only by the owner of the YouTube channel
 <a href="https://www.youtube.com/channel/UCGepB6YggrTu-l5H1bbcw4w">holo-jp-clips</a>
 to upload videos that the owner has edited (English-subtitled clips) to that channel.</p>
-<p>It runs only on the owner's own computer and is not offered to other users.
-It uses the YouTube Data API to upload videos and set their title, description, tags and thumbnail.</p>
-<p><a href="privacy.html">Privacy Policy</a></p>
+<h2>What it does</h2>
+<ul>
+<li>Uploads a finished video file from the owner's computer to the owner's own YouTube channel (videos.insert).</li>
+<li>Sets the video's title, description, tags, category, language and "made for kids" setting.</li>
+<li>Sets the video's custom thumbnail (thumbnails.set).</li>
+<li>Reads back the status of the uploaded video (videos.list) and the owner's channel name (channels.list).</li>
+</ul>
+<p>It runs only on the owner's own computer as a command-line tool, has no server and no other users, and is not distributed or sold.</p>
+<p>By using this app you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>
+and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+See also our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
 <hr>
-<p lang="ja">kirinuki は、YouTube チャンネル holo-jp-clips の持ち主が、自分で編集した動画（英語字幕の切り抜き）を自分のチャンネルに投稿するための個人用の道具です。持ち主のパソコンの中だけで動き、ほかの人には提供していません。</p>
+<p lang="ja">kirinuki は、YouTube チャンネル holo-jp-clips の持ち主が、自分で編集した動画（英語字幕の切り抜き）を自分のチャンネルに投稿するための個人用の道具です。YouTube API サービスを使っています。持ち主のパソコンの中だけで動き、ほかの人には提供していません。</p>
 </body>
 </html>

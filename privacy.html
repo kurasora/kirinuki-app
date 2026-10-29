@@ -7,26 +7,44 @@
 <style>
 body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.7;color:#222;background:#fff}
 h1{font-size:1.6em}h2{font-size:1.15em;margin-top:1.6em}a{color:#0b57d0}
+nav a{margin-right:16px}
 </style>
 </head>
 <body>
+<nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
 <h1>Privacy Policy</h1>
 <p>Last updated: October 30, 2026</p>
-<p>kirinuki is a personal tool used only by the owner of the YouTube channel holo-jp-clips to upload the owner's own videos to that channel.</p>
-<h2>Data the tool accesses</h2>
-<p>With the owner's permission (Google OAuth), the tool uses the YouTube Data API to upload videos to the owner's channel,
-set each video's title, description, tags, category, language and thumbnail, and read back the status of those videos.</p>
-<h2>How data is stored</h2>
-<p>The OAuth token is stored only on the owner's own computer. The tool has no server, and it does not collect, sell or share any data
-with anyone. It does not access any other user's data.</p>
-<h2>Revoking access</h2>
-<p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</p>
-<p>The tool's use of information received from Google APIs adheres to the
-<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>
-and the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>
-(<a href="https://policies.google.com/privacy">Google Privacy Policy</a>).</p>
+<p>kirinuki ("the app") is a personal tool used only by the owner of the YouTube channel holo-jp-clips to upload the owner's own videos to that channel.</p>
+
+<h2>YouTube API Services</h2>
+<p>The app uses <strong>YouTube API Services</strong>. By using the app, users agree to be bound by the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
+Google's privacy practices are described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+(<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>).</p>
+
+<h2>Information the app accesses, uses and stores</h2>
+<p>With the user's permission (Google OAuth 2.0), the app uses the YouTube Data API to:</p>
+<ul>
+<li>upload video files that the user selects on the user's own computer to the user's YouTube channel;</li>
+<li>set each video's title, description, tags, category, language, "made for kids" setting and thumbnail;</li>
+<li>read back the status of those videos and the name and ID of the user's channel.</li>
+</ul>
+<p>The only data stored is the OAuth access/refresh token, which is kept in a local file on the user's own computer.
+The video IDs and URLs of uploaded videos are recorded in local project files on the same computer.
+The app has no server. It does not collect, sell, share or transfer any data to anyone, and it does not use any cookies or tracking.
+It does not access any other user's data.</p>
+
+<h2>Revoking access and deleting data</h2>
+<p>The user can revoke the app's access to their Google account at any time via the Google security settings page:
+<a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</p>
+<p>Deleting the local token file (secrets/youtube_token.json) immediately deletes all stored authorization data.
+API data obtained by the app is not kept beyond what is described above; if access is revoked, the app no longer
+accesses any data, and any locally stored token is deleted within 7 days.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be posted on this page with a new "Last updated" date.</p>
+
 <h2>Contact</h2>
 <p>Please contact the owner through the <a href="https://www.youtube.com/channel/UCGepB6YggrTu-l5H1bbcw4w">holo-jp-clips YouTube channel</a>.</p>
-<p><a href="index.html">Home</a></p>
 </body>
 </html>
